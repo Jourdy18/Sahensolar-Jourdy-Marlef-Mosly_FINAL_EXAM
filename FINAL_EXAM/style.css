@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 30px 525px 30px;
+    grid-template-areas: 
+        'kiri atas'
+        'kiri isinya'
+        'kiri bawah';
+}
+
+.header {
+    grid-area: atas;
+    display: flex;
+    background-color: #97a47e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+ 
+.header .header__search {
+    padding-top: 7px;
+}
+
+.header .header__search a {
+    padding-top: 7px;
+    padding-left: 50px;
+    font-size: medium;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.header .header__search a:hover {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+aside {
+    grid-area: kiri;
+    background-color: #728156;
+}
+
+aside ul {
+    margin-top: 80px;
+    list-style-type: none;
+}
+
+aside ul .sidenav__list-item a {
+    margin-bottom: 25px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+aside ul .sidenav__list-item p {
+    margin-bottom: 25px;
+    color: antiquewhite;
+}
+
+aside ul .sidenav__list-item a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+aside ul .sidenav__list-item {
+    margin-top: 30px;
+}
+
+main {
+    grid-area: isinya;
+    background-color: #E7F5DC;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: 130px 95px 110px auto;
+    grid-template-areas: 
+        'atas1 atas1 atas1 atas1'
+        'tengah2 tengah2 tengah2 tengah2'
+        'kirisey kirisey kananatas kananatas' 
+        'kirisey kirisey kananbawah kananbawah';
+    gap: 15px;
+        padding: 23px;
+}
+
+main .main-header {
+    grid-area: atas1;
+    background-color: #CFE1B9;
+    border-radius: 20px;
+}
+
+main .main-header .main-header__heading {
+    display: flex;
+    margin-left: 410px;
+    margin-top: 5px;
+}
+
+main .main-header .main-header__heading img {
+    width: 40px;
+    height: 40px;
+}
+
+main .main-header .main-header__heading h3 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: Arial;
+}
+
+main .main-header .main-header__updates p {
+    margin-top: 4px;
+    text-align: center;
+    color: #728156;
+    font-family: sans-serif;
+}
+
+.overviewcard1 {
+    background: url(img/pc.jpeg);
+    border-radius: 10px;
+}
+
+.overviewcard1:hover {
+    background: #B6C99B;
+}
+
+.overviewcard1 .overviewcard__info {
+    opacity: 0;
+}
+
+.overviewcard1 .overviewcard__info .teks1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.overviewcard1 .overviewcard__info .teks2{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 35px;
+}
+
+.overviewcard1 .overviewcard__info:hover {
+    background: url(img/pc.jpeg);
+    border-radius: 10px;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(10px 10px 10px #fff);
+    -webkit-background-clip: text;
+    font-family: Arial;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overviewcard2 {
+    background: url(img/result_prayer.jpeg);
+    border-radius: 10px;
+}
+
+.overviewcard2:hover {
+    background: #B6C99B;
+}
+
+.overviewcard2 .overviewcard__info {
+    opacity: 0;
+}
+
+.overviewcard2 .overviewcard__info .teks1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.overviewcard2 .overviewcard__info .teks2{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 35px;
+}
+
+.overviewcard2 .overviewcard__info:hover {
+    background: url(img/result_prayer.jpeg);
+    border-radius: 10px;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(10px 10px 10px #fff);
+    -webkit-background-clip: text;
+    font-family: Arial;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overviewcard3 {
+    background: url(img/result_dining.jpeg);
+    border-radius: 10px;
+}
+
+.overviewcard3:hover {
+    background: #B6C99B;
+}
+
+.overviewcard3 .overviewcard__info {
+    opacity: 0;
+}
+
+.overviewcard3 .overviewcard__info .teks1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.overviewcard3 .overviewcard__info .teks2{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 19px;
+    font-size: 32px;
+}
+
+.overviewcard3 .overviewcard__info:hover {
+    background: url(img/result_dining.jpeg);
+    border-radius: 10px;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(10px 10px 10px #fff);
+    -webkit-background-clip: text;
+    font-family: Arial;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overviewcard4 {
+    background: url(img/result_UK\ gk\ 1.jpeg);
+    border-radius: 10px;
+}
+
+.overviewcard4:hover {
+    background: #B6C99B;
+}
+
+.overviewcard4 .overviewcard__info {
+    opacity: 0;
+}
+
+.overviewcard4 .overviewcard__info .teks1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.overviewcard4 .overviewcard__info .teks2{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 19px;
+    font-size: 32px;
+}
+
+.overviewcard4 .overviewcard__info:hover {
+    background: url(img/result_UK\ gk\ 1.jpeg);
+    border-radius: 10px;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(10px 10px 10px #fff);
+    -webkit-background-clip: text;
+    font-family: Arial;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overviewcard img {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: block;
+    opacity: 0;
+}
+
+.card1 {
+    grid-area: kirisey;
+    background-color: #97a47e;
+}
+
+.card1 iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.card2 {
+    grid-area: kananatas;
+    background-color: #97a47e;
+    display: flex;
+    border-radius: 20px;
+}
+
+.card2 P {
+    font-size: 20px;
+}
+
+.card2 .studi1, .studi2 p {
+    margin-left: 20px;
+    color: azure;
+    text-shadow: 0 0 40px #fff;
+    
+}
+
+.card2 .studi1 p {
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.card2 .studi2 p {
+    margin-left: 5px;
+    margin-top: 30px;
+}
+
+.card2 .fakultas1, .fakultas2 p {
+    margin-left: 40px;
+    color: azure;
+    text-shadow: 0 0 40px #fff;
+    
+}
+
+.card2 .fakultas1 p {
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.card2 .fakultas2 p {
+    margin-left: 5px;
+    margin-top: 43px;
+}
+
+.card2 .asrama1, .asrama2 p {
+    margin-left: 40px;
+    color: azure;
+    text-shadow: 0 0 40px #fff;
+}
+
+.card2 .asrama1 p {
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.card2 .asrama2 p {
+    margin-left: 5px;
+    margin-top: 43px;
+}
+
+.card3 {
+    grid-area: kananbawah;
+    background-color: #97a47e;
+    margin-bottom: 0;
+    height: 112px;
+}
+
+.card3 iframe {
+    margin: 0;
+    width: 100%;
+    height: 112px;
+    padding: 0;
+}
+
+footer {
+    grid-area: bawah;
+    display: flex;
+    padding-top: 8px;
+    background-color: #97a47e;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small  
+}
+
+
+footer .footer__signature {
+    margin-left: 790px;
+}
